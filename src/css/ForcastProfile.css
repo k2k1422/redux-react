@@ -1,0 +1,127 @@
+.topBar{
+    background-color: #F1F1F1;
+    width: 100%;
+    height: 60px;
+}
+.topbarheading{
+    font-size: 30px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+img {
+    height: 36px;
+    width: 36px;
+    float: right;
+    margin-top: 8px;
+    padding-top: 1px;
+    padding-right: 2px;
+    margin-right: 15px;
+}
+.bodyContant{
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 100vh;
+}
+.topMiddleBar{
+    background-color: #E9E9E9;
+    height: 298px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.bottomMiddleBar{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.horizonBLock1{
+    background-color: #E9E9E9;
+    height: 150px;
+    margin-top: 50px;
+    padding-left: 50px;
+    width: 500px;
+    margin-right: 20px;
+}
+.horizonBLock2{
+    background-color: #E9E9E9;
+    height: 150px;
+    margin-top: 50px;
+    padding-left: 50px;
+    width: 500px;
+}
+.horizonBLock3{
+    background-color: #E9E9E9;
+    height: 150px;
+    margin-top: 50px;
+    padding-left: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.horizonHeading{
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+}
+.horizonText{
+    font-size: 15px;
+    padding-left: 40px;
+    padding-top: 10px;
+    height: 60px;
+    text-align: left;
+}
+
+table.demandPlaning{
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+table.demandPlaning,td{
+    padding-top: 15px;
+}
+select{
+    font-size: 15px;
+    padding: 5px;
+    background-color: #F1F1F1;
+    width: 300px;
+    height: 30px;
+    outline:none;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+input[type=text]{
+    font-size: 15px;
+    padding: 5px;
+    background-color: #F1F1F1;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 287px;
+    outline:none;
+    border: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+}
+input[type=text].horizonTextBox{
+    font-size: 20px;
+    background-color: #F1F1F1;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50px;
+    outline:none;
+    border: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+}
+select:focus{
+    background-color: #ffffff;
+}
+input[type=text]:focus{
+    background-color: #ffffff;
+}
