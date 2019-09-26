@@ -1,5 +1,6 @@
-import { FETCH_DATA, FETCH_DATA_STATUS } from '../actionsTypes';
+import { FETCH_DATA, FETCH_DATA_STATUS,RECEIVE,REQUEST,FAILURE } from '../actionsTypes';
 import axios from "axios";
+import { RSAA } from 'redux-api-middleware';
 
 const apiUrl = "https://jsonplaceholder.typicode.com/users"
 
@@ -9,7 +10,7 @@ export const fetch_data = (data) => {
         payload: data
     }
 };
-export const fetched_data = () =>{
+export const fetched_data = () => {
     return {
         type: FETCH_DATA_STATUS,
         payload: false
@@ -31,9 +32,21 @@ export const fetch_robot = () => {
                 console.log(response)
                 dispatch(fetch_data(response.data))
             })
-            .then(()=>(dispatch(fetched_data())));
+                .then(() => (dispatch(fetched_data())));
         } catch (error) {
             throw (error)
+        }
+    }
+}
+
+
+
+export function fetch_data_from_rsaa() {
+    return {
+        [RSAA]: {
+            endpoint: 'https://jsonplaceholder.typicode.com/users',
+            method: 'GET',
+            types: [REQUEST, RECEIVE, FAILURE]   
         }
     }
 }

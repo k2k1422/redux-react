@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import { fetch_robot } from "./redux/actions/fetch_robots";
+import { fetch_robot,fetch_data_from_rsaa } from "./redux/actions/fetch_robots";
 import { HashLoader } from 'react-spinners';
-import ForcastProfile from "./components/ForcastProfile";
+import ForecastProfile from "./components/ForecastProfile1";
+import DataSHeet from './components/DataSheet';
+import TableComponent from './components/TableComponent'
 
 const override = `
     display: block;
@@ -21,12 +23,13 @@ class App extends React.Component {
 
   componentDidMount() {
     this.props.fetch_robot();
+    this.props.fetch_data_from_rsaa();
   }
 
   render() {
     return (
       <div className="App">
-        <ForcastProfile />
+        <TableComponent />
       </div>
     );
   }
@@ -41,7 +44,8 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
-  fetch_robot
+  fetch_robot,
+  fetch_data_from_rsaa
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
