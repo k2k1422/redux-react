@@ -2,12 +2,11 @@ import { FETCH_DATA, FETCH_DATA_STATUS, RECEIVE, REQUEST, FAILURE } from '../act
 
 const initialState = {
     robots: [],
-    rsaa_robots:[],
+    rsaa_robots: [],
     fetch_robot_status: false,
 };
 
 export default function (state = initialState, action) {
-    console.log(action);
     switch (action.type) {
         case FETCH_DATA: {
             return {
@@ -21,13 +20,15 @@ export default function (state = initialState, action) {
                 fetch_robot_status: action.payload
             };
         }
-        case RECEIVE:{
+        case RECEIVE: {
             return {
                 ...state,
-                rsaa_robots:action.payload
+                rsaa_robots: action.payload
             }
         }
         default:
             return state;
     }
 }
+
+

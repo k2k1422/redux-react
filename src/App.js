@@ -5,7 +5,8 @@ import { fetch_robot,fetch_data_from_rsaa } from "./redux/actions/fetch_robots";
 import { HashLoader } from 'react-spinners';
 import ForecastProfile from "./components/ForecastProfile1";
 import DataSHeet from './components/DataSheet';
-import TableComponent from './components/TableComponent'
+import TableComponent from './components/TableComponent';
+import MouseTracker from './components/MouseTracker';
 
 const override = `
     display: block;
@@ -29,14 +30,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <TableComponent />
+        <MouseTracker />
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  console.log(state);
   return {
     robots: state.robots,
     isFetchingData: state.fetch_robot_status,
