@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
+import ForecastProfile from "./components/ForecastProfile1";
+import DataSHeet from './components/DataSheet';
+import TableComponent from './components/TableComponent';
+import StickyHeadTable from './components/StickyHeadTable';
 
 import createHistory from "history/createBrowserHistory"
 import { ConnectedRouter } from "connected-react-router"
@@ -19,7 +23,11 @@ ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <Switch>
-                <Route path="/" component={App} />
+                <Route exact path="/" component={App} />
+                <Route exact path="/forecastProfile" component={ForecastProfile} />
+                <Route exact path="/dataSheet" component={DataSHeet} />
+                <Route exact path="/tableComponent" component={TableComponent} />
+                <Route exact path="/stickyHeadTable" component={StickyHeadTable} />
             </Switch>
         </ConnectedRouter>
     </Provider>

@@ -13,32 +13,36 @@ class TableComponent extends React.Component{
             <div>
                 <table>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
+                        <td>dfdf</td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
+                        <td>dfdf</td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
+                        <td>dfdf</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
                     </tr>
                     <tr>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
-                        <td><input type="text"/></td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                    </tr>
+                    <tr>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
+                        <td>dfdf</td>
                     </tr>
                 </table>
 

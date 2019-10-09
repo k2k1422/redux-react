@@ -1,0 +1,23 @@
+input[type=text] {
+    height: 25px;
+    width: 80%;
+    float: left;
+    font-size: 0.875rem;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+}
+input[type=text]:hover{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    background-color:none;
+    border-radius: 6px;
+}
+input[type=text]:focus{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    background-color: #ffffff;
+    border-radius: 3px;
+}
